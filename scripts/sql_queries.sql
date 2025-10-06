@@ -33,8 +33,8 @@ WHERE institution = "University of Oxford";
 DELETE FROM university_rankings
 WHERE year = 2015 AND score < 45;
 
-
-SELECT * 
+-- To see how many rows after removal
+SELECT COUNT(*)
 FROM university_rankings
-WHERE score < 45 and year = 2015
+
 
