@@ -4,6 +4,10 @@ SELECT *
 FROM university_rankings
 LIMIT 10;
 
+-- Checking the number of row I have before performing crude steps
+SELECT COUNT(*)
+FROM university_rankings;
+
 -- The list of all the column names.
 PRAGMA table_info(university_rankings);
 
@@ -37,17 +41,9 @@ WHERE institution = "University of Oxford";
 DELETE FROM university_rankings
 WHERE year = 2015 AND score < 45;
 
--- To see how many rows after removal
-SELECT COUNT(*)
-FROM university_rankings;
-
+SELECT changes() AS rows_deleted;
 
 /* Peforming basic analysis after CRUD step*/
-
-
-/* Perform basic analysis such as determining the
-total number of rows in the dataset, and calculating 
-maximum, minimum, or sum values of different columns. */
 
 /* Dataset Size & Scope */
 -- Calculating the number of rows I have in the table 
