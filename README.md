@@ -177,6 +177,9 @@ FROM university_rankings
 GROUP BY country 
 ORDER BY total_score DESC;
 ```
+
+![alt text](images/countries_totalscore.png)
+
 **Yearly Trends**
 - Calculated the average and total scores per year to analyze changes over time.  
 - Determined how many universities were ranked in each year.  
@@ -190,6 +193,7 @@ SELECT year, COUNT(*) as ranking_universities
 FROM university_rankings
 GROUP BY year;
 ```
+![alt text](images/yearly_trends.png)
 
 **Top Performers**
 - Listed the top 20 universities based on their quality of education scores.  
@@ -200,7 +204,7 @@ FROM university_rankings
 ORDER BY quality_of_education DESC 
 LIMIT 20;
 ```
-
+![alt text](images/qoe.png)
 
 ## Insights from the Data
 
