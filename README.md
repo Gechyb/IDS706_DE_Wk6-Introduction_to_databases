@@ -121,10 +121,12 @@ UPDATE university_rankings
 SET score = score + 1.2
 WHERE institution = "University of Oxford";
 ```
+![alt text](images/afterupdating_1.2.png)
 
 **Delete**
 - Deleted all universities from 2015 with a score below 45.  
     - There were 556 universities deleted based on the threshold
+    - The are 1645 rows left
 - Checked the total number of rows after deletion to confirm successful removal.  
 
 ```sql
@@ -138,6 +140,7 @@ SELECT changes() AS rows_deleted;
 ### Basic Analysis
 **Dataset Size & Structure**
 - Identified all unique institutions in the rankings.  
+    - There are 1005 instituitions in the table
 
 ```sql
 -- Calculating the number of rows I have in the table 
@@ -147,6 +150,7 @@ FROM university_rankings;
 
 **Ranking Analysis**
 - Found the institution with the best world rank (rank = 1).  
+    - Harvard university ranked 1 in the word
 - Calculated the average world rank across all universities.  
 
 ```sql
@@ -196,6 +200,7 @@ FROM university_rankings
 ORDER BY quality_of_education DESC 
 LIMIT 20;
 ```
+
 
 ## Insights from the Data
 
