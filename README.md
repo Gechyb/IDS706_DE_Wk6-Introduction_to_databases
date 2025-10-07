@@ -89,6 +89,8 @@ SELECT *
 FROM university_rankings
 WHERE institution = "Duke Tech";
 ```
+![alt text](images/duketech_add.png)
+
 **Read**
 - Displayed the first 10 rows of the dataset to inspect data values and structure.  
 - Retrieved all column names using PRAGMA to understand the table schema.  
